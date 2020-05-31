@@ -65,15 +65,15 @@ inquirer
     ]).then(function (data) {
 
         let stream = fs.createWriteStream("README.md");
-        stream.write("# " + data.title + "\n");
-        stream.write("# Description" + data.Description + "\n");
-        stream.write("# Table of Contents" + data.TableofContents + "\n");
-        stream.write("# Installation" + data.Installation + "\n");
-        stream.write("# Usage" + data.Usage + "\n");
-        stream.write("# License" + data.License + "\n");
-        stream.write("# Contributing" + data.Contributing + "\n");
-        stream.write("# Tests" + data.Tests + "\n");
-        stream.write("# Questions" + data.Questions + "\n");
+        stream.write("# " + "\n" + data.title + "\n");
+        stream.write("# Description" + "\n" + data.Description + "\n");
+        stream.write("# Table of Contents" + "\n" + data.TableofContents + "\n");
+        stream.write("# Installation" + "\n" + data.Installation + "\n");
+        stream.write("# Usage" + "\n" + data.Usage + "\n");
+        stream.write("# License" + "\n" + data.License + "\n");
+        stream.write("# Contributing" + "\n" + data.Contributing + "\n");
+        stream.write("# Tests" + "\n" + data.Tests + "\n");
+        stream.write("# Questions" + "\n" + data.Questions + "\n");
         
 
     }).catch(function (error) {
