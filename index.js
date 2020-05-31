@@ -33,12 +33,14 @@ inquirer
         {
             type: "input",
             message: "Installation?",
-            name: "Installation"
+            name: "Installation",
+            default: "npm install"
         },
         {
             type: "input",
             message: "Usage?",
-            name: "Usage"
+            name: "Usage",
+            default: "node index.js"
         },
         {
             type: "input",
@@ -65,7 +67,7 @@ inquirer
     ]).then(function (data) {
 
         let stream = fs.createWriteStream("README.md");
-        stream.write("# " + "\n" + data.title + "\n");
+        stream.write("# " + data.title + "\n");
         stream.write("# Description" + "\n" + data.Description + "\n");
         stream.write("# Table of Contents" + "\n" + data.TableofContents + "\n");
         stream.write("# Installation" + "\n" + data.Installation + "\n");
