@@ -68,9 +68,7 @@ inquirer
         //     name: "Questions"
         // },
 
-
     ]).then(function (data) {
-
         let stream = fs.createWriteStream("README.md");
         stream.write("# " + data.title + "\n");
         stream.write("# Description" + "\n" + data.Description + "\n");
@@ -86,11 +84,12 @@ inquirer
         axios
             .get(queryUrl)
             .then(function (response) {
-                const githubProfile = "<a href='" + response.data.html_url + "'> Github Profile: " + response.data.login + "</a>" + "<img src='" + response.data.avatar_url + "' alt=Github profile picture width=100>";
-                stream.write('# Questions' + '\n Questions may be forwarded to me here...' + githubProfile);
+                const githubProfileLink = "<a href='" + response.data.html_url + "'>" + response.data.login + "</a>" 
+                const githubProfilPic = "<img src='" + response.data.avatar_url + "' alt=Github profile picture width=100>";
+                stream.write('# Questions' + '\n Questions may be forwarded to me at my Github profile' + githubProfileLink + "\n" + githubProfilPic);
 
-                if (user.email !== null) {
-                    stream.write("Email: " + user.email);
+                if (response.data.email !== null) {
+                    stream.write("Email: " + response.data.email);
                 };
                 stream.end();
             });

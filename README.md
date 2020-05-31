@@ -1,8 +1,8 @@
-# readme Generator
+# readme generator
 # Description
-gens readmes
+generates readmes
 # Table of Contents
-sure ok
+none
 # Installation
 npm install
 # Usage
@@ -14,4 +14,5 @@ none
 # Tests
 none
 # Questions
- Questions may be forwarded to me here...<a href='https://github.com/gshaver82'> Github Profile: gshaver82</a><img src='https://avatars3.githubusercontent.com/u/52022933?v=4' alt=Github profile picture width=100>
+ Questions may be forwarded to me at my Github profile<a href='https://github.com/gshaver82'>gshaver82</a>
+<img src='https://avatars3.githubusercontent.com/u/52022933?v=4' alt=Github profile picture width=100>
