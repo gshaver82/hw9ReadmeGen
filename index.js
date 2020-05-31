@@ -17,6 +17,11 @@ inquirer
     .prompt([
         {
             type: "input",
+            message: "Github username?",
+            name: "userName"
+        },
+        {
+            type: "input",
             message: "Title of project?",
             name: "title"
         },
@@ -57,11 +62,11 @@ inquirer
             message: "Tests?",
             name: "Tests"
         },
-        {
-            type: "input",
-            message: "Questions?",
-            name: "Questions"
-        },
+        // {
+        //     type: "input",
+        //     message: "Questions?",
+        //     name: "Questions"
+        // },
 
 
     ]).then(function (data) {
@@ -75,9 +80,20 @@ inquirer
         stream.write("# License" + "\n" + data.License + "\n");
         stream.write("# Contributing" + "\n" + data.Contributing + "\n");
         stream.write("# Tests" + "\n" + data.Tests + "\n");
-        stream.write("# Questions" + "\n" + data.Questions + "\n");
-        
+        // stream.write("# Questions" + "\n" + data.Questions + "\n");
 
+        const queryUrl = `https://api.github.com/users/${data.userName}`;
+        axios
+            .get(queryUrl)
+            .then(function (response) {
+                const githubProfile = "<a href='" + response.data.html_url + "'> Github Profile: " + response.data.login + "</a>" + "<img src='" + response.data.avatar_url + "' alt=Github profile picture width=100>";
+                stream.write('# Questions' + '\n Questions may be forwarded to me here...' + githubProfile);
+
+                if (user.email !== null) {
+                    stream.write("Email: " + user.email);
+                };
+                stream.end();
+            });
     }).catch(function (error) {
         console.log("An error occured:", error);
     });
