@@ -86,7 +86,7 @@ inquirer
             .then(function (response) {
                 const githubProfileLink = "<a href='" + response.data.html_url + "'>" + response.data.login + "</a>" 
                 const githubProfilPic = "<img src='" + response.data.avatar_url + "' alt=Github profile picture width=100>";
-                stream.write('# Questions' + '\n Questions may be forwarded to me at my Github profile' + githubProfileLink + "\n" + githubProfilPic);
+                stream.write('# Questions' + '\n Questions may be forwarded to me at my Github profile' + "\n" + githubProfileLink + "\n" + "\n" + githubProfilPic);
 
                 if (response.data.email !== null) {
                     stream.write("Email: " + response.data.email);
