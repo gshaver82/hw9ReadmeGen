@@ -1,18 +1,18 @@
-# readme generator
+# asdf
 # Description
-generates readmes
+asdf
 # Table of Contents
-table of conents
+none
 # Installation
 npm install
 # Usage
 node index.js
 # License
-none
+BSD 3
 # Contributing
 none
 # Tests
-none
+asdf
 # Questions
  Questions may be forwarded to me at my Github profile
 <a href='https://github.com/gshaver82'>gshaver82</a>
