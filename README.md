@@ -7,8 +7,8 @@ none
 npm install
 # Usage
 node index.js
-# License
-MIT
+<a href='https://opensource.org/licenses/MIT'><img alt='Badge' src='https://img.shields.io/badge/License-MIT-yellow.svg'>
+
 # Contributing
 none
 # Tests
