@@ -8,7 +8,7 @@ npm install
 # Usage
 node index.js
 # License
-<a href='https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'><img alt='Badge' src='https://img.shields.io/badge/License-GPLv3-blue.svg'>
+<a href='http://www.wtfpl.net/about/'><img alt='Badge' src='https://img.shields.io/badge/License-WTFPL-brightgreen.svg'>
 
 # Contributing
 none
