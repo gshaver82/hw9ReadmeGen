@@ -87,12 +87,12 @@ inquirer
         stream.write("# License" + "\n" + data.License + "\n");
         if (data.License === "Mit") {
 
-        } else if ("GNU GPL v3") {
+        } else if (data.License === "GNU GPL v3") {
 
-        } else if ("BSD 3") {
+        } else if (data.License === "BSD 3") {
             stream.write("<a href='https://opensource.org/licenses/BSD-3-Clause'>" + 
             "<img alt='Badge' src='https://img.shields.io/badge/License-BSD%203--Clause-blue.svg'>");
-        } else if ("Do what the F you want.") {
+        } else if (data.License === "Do what the F you want.") {
 
         }else{
             stream.write("# License" + "\n" + data.License + "\n");

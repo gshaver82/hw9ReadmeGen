@@ -9,7 +9,7 @@ npm install
 node index.js
 # License
 BSD 3
-# Contributing
+<a href='https://opensource.org/licenses/BSD-3-Clause'><img alt='Badge' src='https://img.shields.io/badge/License-BSD%203--Clause-blue.svg'># Contributing
 none
 # Tests
 asdf
