@@ -8,11 +8,11 @@ npm install
 # Usage
 node index.js
 # License
-BSD 3
-<a href='https://opensource.org/licenses/BSD-3-Clause'><img alt='Badge' src='https://img.shields.io/badge/License-BSD%203--Clause-blue.svg'># Contributing
+MIT
+# Contributing
 none
 # Tests
-asdf
+none
 # Questions
  Questions may be forwarded to me at my Github profile
 <a href='https://github.com/gshaver82'>gshaver82</a>

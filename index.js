@@ -68,7 +68,8 @@ inquirer
         {
             type: "input",
             message: "Tests?",
-            name: "Tests"
+            name: "Tests",
+            default: "none"
         },
         // {
         //     type: "input",
@@ -84,22 +85,25 @@ inquirer
         stream.write("# Installation" + "\n" + data.Installation + "\n");
         stream.write("# Usage" + "\n" + data.Usage + "\n");
 
-        stream.write("# License" + "\n" + data.License + "\n");
+
         if (data.License === "Mit") {
-
+            stream.write("<a href='https://opensource.org/licenses/MIT'>" +
+                "<img alt='Badge' src='https://img.shields.io/badge/License-MIT-yellow.svg'>\n\n");
         } else if (data.License === "GNU GPL v3") {
-
+            stream.write("<a href='https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'>" +
+                "<img alt='Badge' src='https://img.shields.io/badge/License-GPLv3-blue.svg'>\n\n");
         } else if (data.License === "BSD 3") {
-            stream.write("<a href='https://opensource.org/licenses/BSD-3-Clause'>" + 
-            "<img alt='Badge' src='https://img.shields.io/badge/License-BSD%203--Clause-blue.svg'>");
+            stream.write("<a href='https://opensource.org/licenses/BSD-3-Clause'>" +
+                "<img alt='Badge' src='https://img.shields.io/badge/License-BSD%203--Clause-blue.svg'>\n\n");
         } else if (data.License === "Do what the F you want.") {
-
-        }else{
+            stream.write("<a href='http://www.wtfpl.net/about/'>" +
+                "<img alt='Badge' src='https://img.shields.io/badge/License-WTFPL-brightgreen.svg'>\n\n");
+        } else {
             stream.write("# License" + "\n" + data.License + "\n");
         }
 
 
-        
+
 
         stream.write("# Contributing" + "\n" + data.Contributing + "\n");
         stream.write("# Tests" + "\n" + data.Tests + "\n");
