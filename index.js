@@ -84,7 +84,7 @@ inquirer
         stream.write("# Table of Contents" + "\n" + data.TableofContents + "\n");
         stream.write("# Installation" + "\n" + data.Installation + "\n");
         stream.write("# Usage" + "\n" + data.Usage + "\n");
-
+        stream.write("# License" + "\n");
 
         if (data.License === "MIT") {
             stream.write("<a href='https://opensource.org/licenses/MIT'>" +

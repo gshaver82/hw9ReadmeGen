@@ -7,7 +7,8 @@ none
 npm install
 # Usage
 node index.js
-<a href='https://opensource.org/licenses/MIT'><img alt='Badge' src='https://img.shields.io/badge/License-MIT-yellow.svg'>
+# License
+<a href='https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'><img alt='Badge' src='https://img.shields.io/badge/License-GPLv3-blue.svg'>
 
 # Contributing
 none
