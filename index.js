@@ -86,7 +86,7 @@ inquirer
         stream.write("# Usage" + "\n" + data.Usage + "\n");
 
 
-        if (data.License === "Mit") {
+        if (data.License === "MIT") {
             stream.write("<a href='https://opensource.org/licenses/MIT'>" +
                 "<img alt='Badge' src='https://img.shields.io/badge/License-MIT-yellow.svg'>\n\n");
         } else if (data.License === "GNU GPL v3") {
