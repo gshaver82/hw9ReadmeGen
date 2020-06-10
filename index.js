@@ -78,7 +78,7 @@ inquirer
         // },
 
     ]).then(function (data) {
-        let stream = fs.createWriteStream("README.md");
+        let stream = fs.createWriteStream("./output/README.md");
         stream.write("# " + data.title + "\n");
         stream.write("# Description" + "\n" + data.Description + "\n");
         stream.write("# Table of Contents" + "\n" + data.TableofContents + "\n");
