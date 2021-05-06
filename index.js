@@ -52,7 +52,7 @@ inquirer
     ]).then(function (data) {
         let stream = fs.createWriteStream("./output/README.md");
         stream.write("# " + data.title + "\n");
-        stream.write("# link to deployed app" + "\n" + "<a href='" + data.Link +  "'>gshaver82</a>" + "\n\n");
+        stream.write("# link to deployed app" + "\n" + "<a href='" + data.Link +  "' target='_blank'>deployed app</a>" + "\n\n");
         stream.write("# Screenshot" + "\n" + "<img src='" + data.Screenshot +  "' alt=Screenshot>" + "\n\n");
         stream.write("# Description" + "\n" + data.Description + "\n");
         stream.write("# License" + "\n");

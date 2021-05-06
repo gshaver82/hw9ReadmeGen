@@ -1,6 +1,6 @@
 # 
 # link to deployed app
-<a href='XXtempXX'>gshaver82</a>
+<a href='https://phasmaphobia-ghost-filter.herokuapp.com/' target='_blank'>deployed app</a>
 
 # Screenshot
 <img src='XXtempXX' alt=Screenshot>
